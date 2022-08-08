@@ -7,9 +7,3 @@ C:\Users\pc\Desktop\51 单片机工程\git\01点亮一个LED\led.uvproj
 Project File Date:  08/02/2022
 
 <h2>Output:</h2>
-Build target 'Target 1'
-compiling main.c...
-linking...
-Program Size: data=9.0 xdata=0 code=217
-creating hex file from "led"...
-"led" - 0 Error(s), 0 Warning(s).
