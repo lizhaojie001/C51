@@ -14,20 +14,33 @@ void delay_10us(unsigned int ten_us)
 {
  	while(ten_us--);
 }
+
+void display() {
+     int i = 0;
+    for(; i < 8 ; i++) {
+         switch(i){
+            case 0: P22 = 0; P23 = 0; P24 = 0; break;  
+            case 1: P22 = 1; P23 = 0; P24 = 0; break;
+            case 2: P22 = 0; P23 = 1; P24 = 0; break;
+            case 3: P22 = 1; P23 = 1; P24 = 0; break;
+            case 4: P22 = 0; P23 = 0; P24 = 1; break;
+            case 5: P22 = 1; P23 = 0; P24 = 1; break;
+            case 6: P22 = 0; P23 = 1; P24 = 1; break;
+            case 7: P22 = 1; P23 = 1; P24 = 1; break;
+         }
+        P0 = gsmg_code[i];
+        delay_10us(200);
+        P0 = 0x00;
+    }
+}
  void main() 
 {
-	int a = 2;
-	P0 =(gsmg_code[a]);
-	P24=1;
-	P23=1;
-	P22=0;
+//	int a = 2;
+//	P0 =(gsmg_code[a]);
+//	P24=1;
+//	P23=1;
+//	P22=0;
     while(1) {
-/*			P0 =~gsmg_code[a];
-	 	 	 delay_10us(10000);
-			 a++;	  
-			 if(a = 15) {
-			 a = 0;
-			 }
-			 */
+         display();
 	}			 
 }
