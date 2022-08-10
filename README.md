@@ -10,5 +10,4 @@
 资料:https://pan.baidu.com/s/1enlA_vIzBQQ7omWjYoybAQ 提取码：8ir8
 
 
-[03动态数码管](链接：https://pan.baidu.com/s/1qrcQW-_6HKvxzD5GhK1YYg?pwd=omfy 
-提取码：omfy)
+03动态数码管: 链接：https://pan.baidu.com/s/1qrcQW-_6HKvxzD5GhK1YYg?pwd=omfy 提取码：omfy
