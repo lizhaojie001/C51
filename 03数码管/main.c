@@ -29,7 +29,7 @@ void display() {
             case 7: P22 = 1; P23 = 1; P24 = 1; break;
          }
         P0 = gsmg_code[i];
-        delay_10us(200);
+        delay_10us(20000);
         P0 = 0x00;
     }
 }

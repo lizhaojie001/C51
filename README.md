@@ -10,4 +10,7 @@
 资料:https://pan.baidu.com/s/1enlA_vIzBQQ7omWjYoybAQ 提取码：8ir8
 
 
-03动态数码管: 链接：https://pan.baidu.com/s/1qrcQW-_6HKvxzD5GhK1YYg?pwd=omfy 提取码：omfy
+[03动态数码管](https://pan.baidu.com/s/1qrcQW-_6HKvxzD5GhK1YYg?pwd=omfy)
+
+[04按键控制](./04%E6%8C%89%E9%94%AE%E6%8E%A7%E5%88%B6/main.c)  
+我的机器进过水,只有k4还算灵敏,其他基本是不导通或者导通困难

@@ -1,4 +1,4 @@
-C51 COMPILER V9.01   MAIN                                                                  08/10/2022 20:53:35 PAGE 1   
+C51 COMPILER V9.01   MAIN                                                                  08/10/2022 21:59:51 PAGE 1   
 
 
 C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
@@ -38,7 +38,7 @@ line level    source
   29   3                  case 7: P22 = 1; P23 = 1; P24 = 1; break;
   30   3               }
   31   2              P0 = gsmg_code[i];
-  32   2              delay_10us(200);
+  32   2              delay_10us(20000);
   33   2              P0 = 0x00;
   34   2          }
   35   1      }
@@ -62,7 +62,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    PDATA SIZE       =   ----    ----
    DATA SIZE        =     30    ----
    IDATA SIZE       =   ----    ----
-C51 COMPILER V9.01   MAIN                                                                  08/10/2022 20:53:35 PAGE 2   
+C51 COMPILER V9.01   MAIN                                                                  08/10/2022 21:59:51 PAGE 2   
 
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.
