@@ -36,7 +36,7 @@ void delay_10us(unsigned int ten_us)
     static key=1;
     if(mode) key=1;
     if(KEY1==0||KEY2==0||KEY3==0||KEY4==0) {
-        delay_10us(100);
+        delay_10us(1000);
         key=0;
         if(KEY1==0) return KEY1_PRESS;
         else if(KEY2==0) return KEY2_PRESS;
