@@ -21,16 +21,15 @@ void hc595_a_write_data(u8 data1) {
       
         u8 i= 0;
 	    for( ; i < 8 ; i++) {
-            SER= data1==0? data1 : data1>>(7-i)&0x01;
-            SCLK=0;
-            delay_10us(10);
-            SCLK=1;
-            delay_10us(10);
+            SER= data1>>(7-i)&0x01;
+            SRCLK=0;
+            delay_10us(1);
+            SRCLK=1;         
             }
- 
-        SRCLK=0;
-        delay_10us(10);
-        SRCLK=1;
+                                                                                       
+        SCLK=0;
+        delay_10us(1);
+        SCLK=1;
 }
 
 
@@ -49,18 +48,36 @@ void hc595_a_write_data(u8 data1) {
        }
     }
     */
- 	
-    //write hc595
-      P0 = 0xff; 
+   
+     P2=0xFF;
+      hc595_a_write_data(0x00);
+    //write hc595   left to right
       i= 0;
       for( ; i < 3 ; i++) {
          j = 0;
          for(; j < 8 ; j++) {
-             hc595_a_write_data(cols[j]);
-             delay_10us(20000);
+             hc595_a_write_data(0xff); 
+             P2 = cols[j];           
+             delay_10us(50000);
+       
          }
       }
-
+       
+    
+    //bottom to top
+      i= 0;  
+      hc595_a_write_data(0xFF);  
+      for( ; i < 3 ; i++) {
+         j = 0;
+         for(; j < 8 ; j++) {
+        
+             P2=0x00;
+             P0=rows[7-j];
+             hc595_a_write_data(rows[j]); 
+             delay_10us(50000);
+         }
+      }
+     
       /*
        P0 = 0; 
        i= 0;
@@ -73,5 +90,5 @@ void hc595_a_write_data(u8 data1) {
             }
        }
       */
-
+    
 }
