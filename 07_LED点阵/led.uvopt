@@ -141,7 +141,7 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>62</LineNumber>
+          <LineNumber>50</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -156,7 +156,7 @@
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>65</LineNumber>
+          <LineNumber>26</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -171,21 +171,6 @@
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
-          <LineNumber>26</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
           <LineNumber>14</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>-16777211</Address>
@@ -199,7 +184,7 @@
           <Expression></Expression>
         </Bp>
         <Bp>
-          <Number>4</Number>
+          <Number>3</Number>
           <Type>0</Type>
           <LineNumber>15</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -256,10 +241,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>36</ColumnNumber>
+      <ColumnNumber>98</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>52</TopLine>
-      <CurrentLine>69</CurrentLine>
+      <TopLine>31</TopLine>
+      <CurrentLine>41</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -1611,9 +1596,9 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>7</ColumnNumber>
-          <TopLine>52</TopLine>
-          <CurrentLine>73</CurrentLine>
+          <ColumnNumber>98</ColumnNumber>
+          <TopLine>31</TopLine>
+          <CurrentLine>41</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

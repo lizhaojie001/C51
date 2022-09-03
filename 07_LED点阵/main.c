@@ -9,6 +9,7 @@ unsigned int cols[8] = {0x7f,0xbf,0xdf,0xef,0xf7,0xfb,0xfd,0xfe};
 unsigned int rows[8] = {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80};
 
 unsigned int meng_rows[8] = {0x40,0x5F,0xF5,0x5F,0x40,0x5F,0xF6,0x5F}; // rows data
+
 unsigned int meng_cols[8] = cols;
 
 sbit SCLK = P3^5;
@@ -44,7 +45,7 @@ void hc595_a_write_data(u8 data1) {
     for(i = 0 ; i < 8 ; i++ ) {
        P2= cols[i];
        P0= P2;
-       hc595_a_write_data(meng_rows[i]); 
+       hc595_a_write_data(~meng_rows[i]); 
        delay_10us(1000);
          P0 = P2 = 0XFF;
        hc595_a_write_data(0x00);
