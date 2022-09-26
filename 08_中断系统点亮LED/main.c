@@ -24,6 +24,7 @@ void init_exit0() {
  void main() 
 {
      init_exit0();
+     P0 = 0xff;
      S1 = 1;
      while(1) {
       
@@ -32,6 +33,6 @@ void init_exit0() {
 }
 
 void exit0() interrupt 0 {
-       delay_10us(100);
+       delay_10us(1000);
        LED = !LED;
 }
