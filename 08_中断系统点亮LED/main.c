@@ -6,6 +6,7 @@ typedef unsigned char u8;
 typedef unsigned int u16;
 
 sbit S1 = P1^0;
+sbit S2 = P1^1;
 sbit LED = P0^0;
 
  
@@ -25,7 +26,8 @@ void init_exit0() {
 {
      init_exit0();
      P0 = 0xff;
-     S1 = 1;
+     S1 = 0;
+     S2 = 0;
      while(1) {
       
      }
